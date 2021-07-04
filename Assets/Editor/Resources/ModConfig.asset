@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 615501dbe4f3fe94fbf4b564abb10237, type: 3}
+  m_Name: ModConfig
+  m_EditorClassIdentifier: 
+  id: hypercolor
+  title: The Hypercolor
+  author: Piissii
+  description: 'The Hypercolor 1.0
+
+    I''d rather take the one that hypered colors not colored hypercube.
+
+
+    This module has TP-Support.
+
+
+    Manual available here:
+
+    https://ktane.timwi.de/HTML/The%20Hypercolor.html
+
+
+
+
+    Module ID: hypercolor
+
+    Created by: Piissii'
+  version: 1.0
+  outputFolder: build
+  previewImage: {fileID: 2800000, guid: 9d3a228673db09448a69e8e8fe1c0669, type: 3}
