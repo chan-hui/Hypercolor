@@ -168,6 +168,7 @@ public class hypercolorScript : MonoBehaviour {
 			if (remaincolor != PrimColors[targetColor])
 			{
 				VertiColor.Add(remaincolor);
+				VertiColor.Add(remaincolor);
 			}
 		}
 		while (!(VertiColor.Count >= 32))
@@ -185,19 +186,43 @@ public class hypercolorScript : MonoBehaviour {
 			c1.vert[i].VertexColor = VertiColor[i];
 			c2.vert[i].VertexColor = VertiColor[i + 16];
 		}
-		Debug.LogFormat("[Hypercolor #{0}] Your target color is {1}", moduleId, GetColor(PrimColors[targetColor]));
-		Debug.LogFormat("[Hypercolor #{0}] Cube 1 is\n   {1}/{2} ----- {3}/{4}\n   /|        /|\n  / |       / |\n{5}/{6} +---- {7}/{8} |\n |  |      |  |\n | {9}/{10} ----+ {11}/{12}\n | /       | /\n |/        |/\n{13}/{14} ----- {15}/{16}"
-			, moduleId, GetColor(c1.vert[0].VertexColor), GetColor(c1.vert[1].VertexColor), GetColor(c1.vert[2].VertexColor)
-			, GetColor(c1.vert[3].VertexColor), GetColor(c1.vert[4].VertexColor), GetColor(c1.vert[5].VertexColor)
-			, GetColor(c1.vert[6].VertexColor), GetColor(c1.vert[7].VertexColor), GetColor(c1.vert[8].VertexColor)
-			, GetColor(c1.vert[9].VertexColor), GetColor(c1.vert[10].VertexColor), GetColor(c1.vert[11].VertexColor)
-			, GetColor(c1.vert[12].VertexColor), GetColor(c1.vert[13].VertexColor), GetColor(c1.vert[14].VertexColor), GetColor(c1.vert[15].VertexColor));
-		Debug.LogFormat("[Hypercolor #{0}] Cube 2 is\n   {1}/{2} ----- {3}/{4}\n   /|        /|\n  / |       / |\n{5}/{6} +---- {7}/{8} |\n |  |      |  |\n | {9}/{10} ----+ {11}/{12}\n | /       | /\n |/        |/\n{13}/{14} ----- {15}/{16}"
-			, moduleId, GetColor(c2.vert[0].VertexColor), GetColor(c2.vert[1].VertexColor), GetColor(c2.vert[2].VertexColor)
-			, GetColor(c2.vert[3].VertexColor), GetColor(c2.vert[4].VertexColor), GetColor(c2.vert[5].VertexColor)
-			, GetColor(c2.vert[6].VertexColor), GetColor(c2.vert[7].VertexColor), GetColor(c2.vert[8].VertexColor)
-			, GetColor(c2.vert[9].VertexColor), GetColor(c2.vert[10].VertexColor), GetColor(c2.vert[11].VertexColor)
-			, GetColor(c2.vert[12].VertexColor), GetColor(c2.vert[13].VertexColor), GetColor(c2.vert[14].VertexColor), GetColor(c2.vert[15].VertexColor));
+		Debug.LogFormat("[The Hypercolor #{0}] Your target color is {1}", moduleId, GetColor(PrimColors[targetColor]));
+		Debug.LogFormat("[The Hypercolor #{0}] Cube 1 is", moduleId);
+		Debug.LogFormat("[The Hypercolor #{0}]   {1}/{2} ----- {3}/{4}", moduleId
+			, GetColor(c1.vert[0].VertexColor), GetColor(c1.vert[1].VertexColor)
+			, GetColor(c1.vert[2].VertexColor), GetColor(c1.vert[3].VertexColor));
+		Debug.LogFormat("[The Hypercolor #{0}]   /|        /|", moduleId);
+		Debug.LogFormat("[The Hypercolor #{0}]  / |       / |", moduleId);
+		Debug.LogFormat("[The Hypercolor #{0}]{1}/{2} +---- {3}/{4} |", moduleId
+			, GetColor(c1.vert[4].VertexColor), GetColor(c1.vert[5].VertexColor)
+			, GetColor(c1.vert[6].VertexColor), GetColor(c1.vert[7].VertexColor));
+		Debug.LogFormat("[The Hypercolor #{0}] |  |      |  |", moduleId);
+		Debug.LogFormat("[The Hypercolor #{0}] | {1}/{2} ----+ {3}/{4}", moduleId
+			, GetColor(c1.vert[8].VertexColor), GetColor(c1.vert[9].VertexColor)
+			, GetColor(c1.vert[10].VertexColor), GetColor(c1.vert[11].VertexColor));
+		Debug.LogFormat("[The Hypercolor #{0}] | /       | /", moduleId);
+		Debug.LogFormat("[The Hypercolor #{0}] |/        |/", moduleId);
+		Debug.LogFormat("[The Hypercolor #{0}]{1}/{2} ----- {3}/{4}", moduleId
+			, GetColor(c1.vert[12].VertexColor), GetColor(c1.vert[13].VertexColor)
+			, GetColor(c1.vert[14].VertexColor), GetColor(c1.vert[15].VertexColor));
+		Debug.LogFormat("[The Hypercolor #{0}] Cube 2 is", moduleId);
+		Debug.LogFormat("[The Hypercolor #{0}]   {1}/{2} ----- {3}/{4}", moduleId
+			, GetColor(c2.vert[0].VertexColor), GetColor(c2.vert[1].VertexColor)
+			, GetColor(c2.vert[2].VertexColor), GetColor(c2.vert[3].VertexColor));
+		Debug.LogFormat("[The Hypercolor #{0}]   /|        /|", moduleId);
+		Debug.LogFormat("[The Hypercolor #{0}]  / |       / |", moduleId);
+		Debug.LogFormat("[The Hypercolor #{0}]{1}/{2} +---- {3}/{4} |", moduleId
+			, GetColor(c2.vert[4].VertexColor), GetColor(c2.vert[5].VertexColor)
+			, GetColor(c2.vert[6].VertexColor), GetColor(c2.vert[7].VertexColor));
+		Debug.LogFormat("[The Hypercolor #{0}] |  |      |  |", moduleId);
+		Debug.LogFormat("[The Hypercolor #{0}] | {1}/{2} ----+ {3}/{4}", moduleId
+			, GetColor(c2.vert[8].VertexColor), GetColor(c2.vert[9].VertexColor)
+			, GetColor(c2.vert[10].VertexColor), GetColor(c2.vert[11].VertexColor));
+		Debug.LogFormat("[The Hypercolor #{0}] | /       | /", moduleId);
+		Debug.LogFormat("[The Hypercolor #{0}] |/        |/", moduleId);
+		Debug.LogFormat("[The Hypercolor #{0}]{1}/{2} ----- {3}/{4}", moduleId
+			, GetColor(c2.vert[12].VertexColor), GetColor(c2.vert[13].VertexColor)
+			, GetColor(c2.vert[14].VertexColor), GetColor(c2.vert[15].VertexColor));
 	}
 
 	string GetColor(Color c)
@@ -245,7 +270,7 @@ public class hypercolorScript : MonoBehaviour {
 			if (c1.vert[i].VertexColor == PrimColors[targetColor] || c2.vert[i].VertexColor == PrimColors[targetColor])
 			{
 				targetVertex = i;
-				Debug.LogFormat("[Hypercolor #{0}] Target vertex is now {1}", moduleId, GetVertexCoords(i));
+				Debug.LogFormat("[The Hypercolor #{0}] Target vertex is now {1}", moduleId, GetVertexCoords(i));
 			}
 		}
 	}
@@ -317,7 +342,7 @@ public class hypercolorScript : MonoBehaviour {
 		Rotations.Shuffle();
 		RotateCube(c1, Rotations[0]);
 		RotateCube(c2, Rotations[1]);
-		Debug.LogFormat("[Hypercolor #{0}] Background Pressed, Rotating each cube with {1} / {2}", moduleId, Rotations[0], Rotations[1]);
+		Debug.LogFormat("[The Hypercolor #{0}] Background Pressed, Rotating each cube with {1} / {2}", moduleId, Rotations[0], Rotations[1]);
 		displayVertexsColor();
 	}
 	void VertexPress(KMSelectable vertex, int index)
@@ -335,7 +360,7 @@ public class hypercolorScript : MonoBehaviour {
 		else
 		{
 			GetComponent<KMBombModule>().HandleStrike();
-			Debug.LogFormat("[Hypercolor #{0}] You have to press {1}, You pressed {2}. Strike!", moduleId, GetVertexCoords(targetVertex), GetVertexCoords(index));
+			Debug.LogFormat("[The Hypercolor #{0}] You have to press {1}, You pressed {2}. Strike!", moduleId, GetVertexCoords(targetVertex), GetVertexCoords(index));
 			for (int i = 0; i < 16; i++)
 			{
 				c1.vert[i].VertexColor = Color.black;
@@ -359,7 +384,7 @@ public class hypercolorScript : MonoBehaviour {
 		yield return null;
 	}
 	
-	public List <KMSelectable> ProcessTwitchCommand(string command){
+	public IEnumerator ProcessTwitchCommand(string command){
 
 		string[] cutInBlank = command.Split(new char[] {' '});
 
@@ -369,13 +394,15 @@ public class hypercolorScript : MonoBehaviour {
 			    || cutInBlank[0].Equals("BG", StringComparison.InvariantCultureIgnoreCase))
 			{
 				background.GetComponent<KMSelectable>().OnInteract();
+				yield return null;
 			}
 			else
 			{
+				bool valid = true;
 				string[] axes = cutInBlank[0].Split(new char[] {'-'});
 				if (axes.Length != 4)
 				{
-					return null;
+					valid = false;
 				}
 				int[] states = new int[4]{0, 0, 0, 0};
 				foreach (var axe in axes)
@@ -418,15 +445,18 @@ public class hypercolorScript : MonoBehaviour {
 				{
 					if (state == 0)
 					{
-						return null;
+						valid = false;
 					}
 				}
 
-				vertices[c1.FindVertex(states[0] == 1, states[1] == 1, states[2] == 1, states[3] == 1)]
-					.GetComponent<KMSelectable>().OnInteract();
-
+				if (valid)
+				{
+					vertices[c1.FindVertex(states[0] == 1, states[1] == 1, states[2] == 1, states[3] == 1)]
+						.GetComponent<KMSelectable>().OnInteract();
+					yield return null;
+				}
+				
 			}
 		}
-		return null;
 	}
 }
