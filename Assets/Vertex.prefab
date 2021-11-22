@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4326703424525620}
   - component: {fileID: 33048566569561264}
   - component: {fileID: 23147641012433344}
+  - component: {fileID: 64706643611084226}
   - component: {fileID: 95538908699025060}
   - component: {fileID: 114340670786681108}
   - component: {fileID: 114374462597668832}
@@ -160,6 +161,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1368275778304998}
   m_Mesh: {fileID: 4300000, guid: c40450e3960fb804cb5931a2ece19955, type: 3}
+--- !u!64 &64706643611084226
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1072920488594650}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: c40450e3960fb804cb5931a2ece19955, type: 3}
 --- !u!95 &95538908699025060
 Animator:
   serializedVersion: 3
@@ -223,7 +238,8 @@ MonoBehaviour:
   IsPassThrough: 0
   ChildRowLength: 0
   Highlight: {fileID: 114918229494311946}
-  SelectableColliders: []
+  SelectableColliders:
+  - {fileID: 64706643611084226}
   DefaultSelectableIndex: 0
   AllowSelectionWrapX: 0
   AllowSelectionWrapY: 0

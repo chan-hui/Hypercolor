@@ -459,4 +459,11 @@ public class hypercolorScript : MonoBehaviour {
 			}
 		}
 	}
+
+	public IEnumerator TwitchHandleForcedSolve()
+    {
+		while (animationPlaying) yield return true;
+		vertices[targetVertex].GetComponent<KMSelectable>().OnInteract();
+		yield return null;
+    }
 }
