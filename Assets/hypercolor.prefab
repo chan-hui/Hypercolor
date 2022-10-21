@@ -4280,9 +4280,15 @@ MonoBehaviour:
   - {fileID: 1967601215061580}
   - {fileID: 1098394150062540}
   - {fileID: 1046026992444874}
+<<<<<<< Updated upstream
   background: {fileID: 1957532196823106}
   TwitchHelpMessage: 'Use !{0} top-right-back-zag to press that vertex. Use !{0} b
     or !{0} bg to press the background. '
+=======
+  background: {fileID: 114132148616140060}
+  TwitchHelpMessage: Use !{0} top-right-back-zag to press that vertex. Use !{0} b
+    or !{0} bg to press the background.
+>>>>>>> Stashed changes
 --- !u!114 &114836624254906170
 MonoBehaviour:
   m_ObjectHideFlags: 1
