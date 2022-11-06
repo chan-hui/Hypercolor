@@ -298,9 +298,20 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114823054893540210, guid: e22caff8c2f424548b40d375756d9c19,
+        type: 2}
+      propertyPath: background
+      value: 
+      objectReference: {fileID: 1382036349}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e22caff8c2f424548b40d375756d9c19, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1382036349 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114132148616140060, guid: e22caff8c2f424548b40d375756d9c19,
+    type: 2}
+  m_PrefabInternal: {fileID: 1382036348}
+  m_Script: {fileID: 1702003387, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
 --- !u!1001 &1595157161
 Prefab:
   m_ObjectHideFlags: 0

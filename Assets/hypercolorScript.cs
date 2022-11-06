@@ -748,8 +748,6 @@ public class hypercolorScript : MonoBehaviour
 			}
 		}
 	}
-<<<<<<< Updated upstream
-=======
 
 	public IEnumerator TwitchHandleForcedSolve()
 	{
@@ -762,5 +760,4 @@ public class hypercolorScript : MonoBehaviour
 		}
 		yield return null;
     }
->>>>>>> Stashed changes
 }
