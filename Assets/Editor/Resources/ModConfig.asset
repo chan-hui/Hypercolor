@@ -14,7 +14,7 @@ MonoBehaviour:
   id: hypercolor
   title: The Hypercolor
   author: Piissii
-  description: 'The Hypercolor 2.11
+  description: 'The Hypercolor 2.2
 
     I''d rather take the one that hypered colors not colored hypercube.
 
@@ -32,6 +32,6 @@ MonoBehaviour:
     Module ID: hypercolor
 
     Created by: Piissii'
-  version: 2.11
+  version: 2.2
   outputFolder: build
   previewImage: {fileID: 2800000, guid: b2cf101b255612f4bb892a167e067e07, type: 3}

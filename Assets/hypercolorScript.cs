@@ -310,7 +310,8 @@ public class hypercolorScript : MonoBehaviour
 				SelectedRotations[i,j] = Rotations[3 * i + j];
 			}
 		}
-		Debug.LogFormat("[The Hypercolor #{0}] Rotations are {1} {2} {3} / {4} {5} {6} / {7} {8} {9}",
+		
+		Debug.LogFormat("[The Hypercolor #{0}] Rotations are 1: R({1}) G({2}) B({3}) / 2: R({4}) G({5}) B({6}) / 3: R({7}) G({8}) B({9})",
 			moduleId, SelectedRotations[0,0], SelectedRotations[0,1], SelectedRotations[0,2]
 			, SelectedRotations[1,0], SelectedRotations[1,1], SelectedRotations[1,2]
 			, SelectedRotations[2,0], SelectedRotations[2,1], SelectedRotations[2,2]);
